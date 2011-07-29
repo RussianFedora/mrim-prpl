@@ -5,7 +5,7 @@
 
 Name:		mrim-prpl
 Version:	0.1.28
-Release:	2%{?dist}
+Release:	2%{?dist}.R
 Summary:	Mail.ru Aganet protocol plugin for Pidgin (libpurple)
 Summary(ru):	плагин к Pidgin и libpurple реализующий протокол MMP(Mail.RU) 
 
@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 %{_datadir}/locale/*
 
 %changelog
-* Sat Jul 16 2011 Alexei Panov <elemc@atisserv.ru> - 0.1.28-2
+* Sat Jul 16 2011 Alexei Panov <elemc@atisserv.ru> - 0.1.28-2.R
 - added gettext in BuildRequires
 * Sat Jul 16 2011 Alexei Panov <elemc@atisserv.ru> - 0.1.28-1
 - New version
