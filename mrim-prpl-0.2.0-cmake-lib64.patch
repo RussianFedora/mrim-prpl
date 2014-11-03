@@ -1,0 +1,12 @@
+diff -uNdr mrim-prpl-0.2.0.orig/CMakeLists.txt mrim-prpl-0.2.0/CMakeLists.txt
+--- mrim-prpl-0.2.0.orig/CMakeLists.txt	2014-11-03 22:13:03.781276716 +0300
++++ mrim-prpl-0.2.0/CMakeLists.txt	2014-11-03 22:12:31.000000000 +0300
+@@ -66,7 +66,7 @@
+ # Set constants for UNIX-like.
+ if(UNIX)
+     if(NOT DEFINED CMAKE_INSTALL_LIBDIR)
+-        set(CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
++        set(CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}")
+     endif()
+     if(NOT DEFINED LANGUAGE_SUPPORT_DIRECTORY)
+         set(LANGUAGE_SUPPORT_DIRECTORY ${CMAKE_INSTALL_PREFIX}/share/locale)
