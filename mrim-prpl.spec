@@ -12,12 +12,11 @@ Summary(ru):	плагин к Pidgin и libpurple реализующий прот
 Group:		    Applications/Communications
 License:	    GPLv2
 URL:		    http://code.google.com/p/mrim-prpl
-# Source0:	    http://mrim-prpl.googlecode.com/files/%{name}-%{version}.tar.gz
 Source0:        http://repo.elemc.name/sources/%{name}/%{name}-%{version}.tar.xz
 Patch100:       http://repo.elemc.name/sources/mrim-prpl/mrim-prpl-0.2.0-cmake-lib64.patch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:	glib2-devel gtk2-devel
+BuildRequires:	glib2-devel gtk2-devel cmake
 BuildRequires:	libpurple-devel gettext
 Requires:	    libpurple
 
